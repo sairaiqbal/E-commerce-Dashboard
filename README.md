@@ -1,22 +1,20 @@
-# 🛒 E-commerce Admin Dashboard
+#  E-commerce Admin Dashboard
 
 This is a web-based **E-commerce Admin Dashboard** developed for e-commerce managers to efficiently monitor and manage **revenue, orders, and inventory**. Built using **Vue.js** and **Tailwind CSS**, the dashboard offers real-time data visualization, inventory updates, and product management features—all designed with a clean and intuitive UI.
 
-## Live Demo
+##  Live Demo
 
-🌐 [Click here to view the live dashboard](https://your-hosted-demo-link.com)
-
-
+🌐 [Click here to view the live dashboard](https://e-commerce-dashboard-brown.vercel.app/)
 
 ##  Features
 
-### 1.  Revenue Analysis
+### 1. Revenue Analysis
 - Real-time display of **total orders**, **sales (revenue)**, and **average order value**.
 - Interactive **line and bar charts** showing trends over time .
 - Revenue and orders data **filterable by product category** (e.g., Amazon, Walmart).
 - Visually enhanced x-axis with smart date formatting.
 
-### 2.  Inventory Management
+### 2. Inventory Management
 - Full list of products with platform tags (Amazon/Walmart).
 - **Filter, search, and sort** products by name or stock level.
 - **Update stock levels** directly from the dashboard.
@@ -31,7 +29,7 @@ This is a web-based **E-commerce Admin Dashboard** developed for e-commerce mana
   - Image Upload
 
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend:** Vue 3, Tailwind CSS
 - **Backend/API:** Axios with dummy JSON data (`https://dummyjson.com`)
@@ -39,12 +37,12 @@ This is a web-based **E-commerce Admin Dashboard** developed for e-commerce mana
 - **State Management:** Vue `ref` + `computed`
 - **Hosting:** [e.g., Vercel / Netlify / Render]
 
-## 🧪 Sample Data
+##  Sample Data
 
-- Demo data is used from [https://dummyjson.com](https://dummyjson.com) 
+- Demo data is used from [https://dummyjson.com](https://dummyjson.com) to simulate orders, revenue, and product inventory.
 - Platforms are randomly assigned between `Amazon` and `Walmart`.
 
-## 🧑‍💻 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -57,8 +55,3 @@ This is a web-based **E-commerce Admin Dashboard** developed for e-commerce mana
 ```bash
 git clone https://github.com/yourusername/ecommerce-admin-dashboard.git
 cd ecommerce-admin-dashboard
-# Vue 3 + Vite
-
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
