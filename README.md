@@ -4,7 +4,7 @@ This is a web-based **E-commerce Admin Dashboard** developed for e-commerce mana
 
 ##  Live Demo
 
-🌐 [Click here to view the live dashboard](https://your-hosted-demo-link.com)
+🌐 [Click here to view the live dashboard](https://e-commerce-dashboard-brown.vercel.app/)
 
 ##  Features
 
