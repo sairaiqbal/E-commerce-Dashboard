@@ -35,7 +35,7 @@ This is a web-based **E-commerce Admin Dashboard** developed for e-commerce mana
 - **Backend/API:** Axios with dummy JSON data (`https://dummyjson.com`)
 - **Charts:** Chart.js (via vue-chartjs)
 - **State Management:** Vue `ref` + `computed`
-- **Hosting:** [e.g., Vercel / Netlify / Render]
+- **Hosting:**  Vercel 
 
 ##  Sample Data
 
