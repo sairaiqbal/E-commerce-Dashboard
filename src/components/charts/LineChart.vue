@@ -35,7 +35,6 @@ const props = defineProps({
   data: {
     type: Array,
     required: true,
-    // format: [{ date: '2025-05-01', value: 123 }, ...]
   },
 });
 

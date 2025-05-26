@@ -2,7 +2,7 @@
   <div class="space-y-6">
     <h2 class="text-2xl font-bold text-purple-700">Revenue Analysis</h2>
 
-    <!-- Top Metrics -->
+   
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
       <div class="bg-white p-4 rounded shadow hover:bg-purple-200 text-center">
         <div class="text-gray-500">Total Orders</div>
@@ -22,7 +22,7 @@
       </div>
     </div>
 
-    <!-- Filter Bar -->
+    
     <div class="flex items-center justify-between flex-wrap gap-4">
       <h3 class="text-lg font-semibold text-gray-700">Revenue Trends</h3>
       <select
@@ -40,7 +40,7 @@
       </select>
     </div>
 
-    <!-- Charts Grid -->
+   
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
       <div class="bg-white p-4 rounded shadow">
         <h4 class="text-md font-semibold mb-2 text-gray-600">
@@ -96,7 +96,7 @@ async function fetchProducts() {
     );
     products.value = response.data.products;
 
-    // Extract unique categories
+    // Extracting  unique categories
     categories.value = Array.from(
       new Set(products.value.map((p) => p.category))
     );
@@ -104,6 +104,7 @@ async function fetchProducts() {
     updateMetrics();
   } catch (error) {
     console.error("Failed to fetch products:", error);
+    alert(`Failed to fetch products, try again.\nError: ${error.message}`);
   }
 }
 

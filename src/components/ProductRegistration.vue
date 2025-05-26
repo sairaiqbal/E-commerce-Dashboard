@@ -8,7 +8,7 @@
       @submit.prevent="submit"
       class="grid grid-cols-1 md:grid-cols-2 gap-6"
     >
-      <!-- Product Name -->
+     
       <div>
         <label class="form-label">Product Name</label>
         <input
@@ -20,7 +20,7 @@
         />
       </div>
 
-      <!-- Price -->
+     
       <div>
         <label class="form-label">Price ($)</label>
         <input
@@ -32,7 +32,7 @@
         />
       </div>
 
-      <!-- Stock -->
+     
       <div>
         <label class="form-label">Initial Stock</label>
         <input
@@ -44,7 +44,7 @@
         />
       </div>
 
-      <!-- Platform -->
+    
       <div>
         <label class="form-label">Platform</label>
         <select v-model="product.platform" class="form-input" required>
@@ -54,7 +54,7 @@
         </select>
       </div>
 
-      <!-- Description -->
+ 
       <div class="md:col-span-2">
         <label class="form-label">Description</label>
         <textarea
@@ -66,7 +66,7 @@
         ></textarea>
       </div>
 
-      <!-- Image Upload -->
+    
       <div>
         <label class="form-label">Upload Image</label>
         <input
@@ -77,7 +77,7 @@
         />
       </div>
 
-      <!-- Image Preview -->
+     
       <div v-if="imagePreview" class="flex items-center justify-center">
         <img
           :src="imagePreview"
@@ -86,7 +86,7 @@
         />
       </div>
 
-      <!-- Submit Button -->
+     
       <div class="md:col-span-2 text-center mt-6">
         <button
           type="submit"
@@ -96,7 +96,7 @@
           {{ loading ? "Adding..." : "Add Product" }}
         </button>
 
-        <!-- Success Message -->
+      
         <transition name="fade">
           <p v-if="successMessage" class="text-green-600 mt-4 text-sm">
             {{ successMessage }}

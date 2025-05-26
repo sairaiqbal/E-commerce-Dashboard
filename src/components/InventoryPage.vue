@@ -4,7 +4,7 @@
       Inventory Management
     </h2>
 
-    <!-- Filters and Search -->
+    
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
       <input
         v-model="search"
@@ -32,7 +32,7 @@
       </select>
     </div>
 
-    <!-- Loading State -->
+    
     <div v-if="loading" class="text-center py-10 text-purple-600">
       <svg
         class="animate-spin h-8 w-8 mx-auto mb-2 text-purple-600"
@@ -57,10 +57,10 @@
       <p class="text-lg font-medium">Fetching products, please wait...</p>
     </div>
 
-    <!-- Inventory Table -->
+    
     <table
       v-else-if="filteredAndSorted.length > 0"
-      class="w-full bg-white shadow-md rounded-lg overflow-hidden"
+      class="w-full min-w-[600px] bg-white shadow-md rounded-lg overflow-hidden"
     >
       <thead>
         <tr class="bg-purple-100 text-purple-700">
@@ -101,7 +101,7 @@
       </tbody>
     </table>
 
-    <!-- No Results Message -->
+   
     <div v-else class="text-center text-purple-600 py-8">
       <p class="text-lg font-medium">
         No products match your search or filters.
@@ -132,7 +132,10 @@ onMounted(async () => {
       ...p,
       platform: Math.random() > 0.5 ? "Amazon" : "Walmart",
     }));
+    // console.log("inventory "  ,inventory.value)
     platforms.value = [...new Set(inventory.value.map((p) => p.platform))];
+    // console.log("saira" , platforms.value)
+
   } catch (error) {
     console.error("Failed to fetch products:", error);
   } finally {
